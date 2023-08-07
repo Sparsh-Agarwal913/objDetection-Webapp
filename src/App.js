@@ -45,17 +45,19 @@ function App() {
     }
   }
 
-  async function convertnum(num) {
-    const convertednum = Math.floor(111111 + num * 15728639).toString(16);
-    return convertednum;
-  }
+  // async function convertnum(num) {
+  //   const convertednum = Math.floor(111111 + num * 15728639).toString(16);
+  //   return convertednum;
+  // }
 
   async function drawrect(prediction, ctx) {
     prediction.forEach(async (element) => {
-      const colornum = await convertnum(element.score);
-      const color = "#" + colornum;
+      // const colornum = await convertnum(element.score);
+      // const color = "#" + colornum;
       const [x, y, width, height] = element.bbox;
       const text = element.class;
+      const score = Math.floor((element.score)*100);
+      // const text = element.class;
 
       // ctx.strokeStyle = color;
       ctx.strokeStyle = "#00000";
@@ -66,6 +68,7 @@ function App() {
       // ctx.fillStyle = color;
       ctx.fillStyle = "#000";
       ctx.fillText(text, x, y - 10);
+      ctx.fillText(score,x+70, y - 10);
       ctx.rect(x, y, width, height);
       ctx.stroke();
     });
