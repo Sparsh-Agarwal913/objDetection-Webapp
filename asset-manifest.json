@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/objDetection-Webapp/static/css/main.f0813ca4.css",
+    "main.js": "/objDetection-Webapp/static/js/main.789628aa.js",
+    "index.html": "/objDetection-Webapp/index.html",
+    "main.f0813ca4.css.map": "/objDetection-Webapp/static/css/main.f0813ca4.css.map",
+    "main.789628aa.js.map": "/objDetection-Webapp/static/js/main.789628aa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0813ca4.css",
+    "static/js/main.789628aa.js"
+  ]
+}
