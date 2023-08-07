@@ -56,7 +56,7 @@ function App() {
       // const color = "#" + colornum;
       const [x, y, width, height] = element.bbox;
       const text = element.class;
-      const score = Math.floor((element.score)*100);
+      const score = (Math.floor((element.score)*100))+'%';
       // const text = element.class;
 
       // ctx.strokeStyle = color;
