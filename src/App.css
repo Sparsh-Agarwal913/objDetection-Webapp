@@ -1,38 +1,38 @@
-.App {
+.webcam{
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+.bgparticle{
+  z-index: "-3";
+}
+.text{
+  font-size: 2.5rem;
+  color: rgb(202, 243, 255);
+  position: absolute;
   text-align: center;
+  top: 0rem;
+  width: 99vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "Borel", cursive;
+  text-align: center;
+  font-weight: 150px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.boxcanvas{
+  left: 50%;
+  transform: translate(-50%, 40%);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #303134;
+  color: #fff;
+  padding-top: 5px;
+  width: 100vw;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+i{
+  margin: 10px 15px;
 }
